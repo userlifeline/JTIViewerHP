@@ -135,9 +135,9 @@ header li {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
   
-  .download-button {
+.download-button {
     width: 140px;
     height: 45px;
     font-family: 'Roboto', sans-serif;
@@ -153,11 +153,72 @@ header li {
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
-    }
+}
   
-  .download-button:hover {
+.download-button:hover {
     background-color: #2EE59D;
     box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
     color: #fff;
     transform: translateY(-7px);
+}
+
+.btn,
+a.btn,
+button.btn {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.5;
+    position: relative;
+    display: inline-block;
+    padding: 3rem 4rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #212529;
+    border-radius: 0.5rem;
+}
+
+a.btn {
+    text-align: center;
+    vertical-align: center;
+}
+
+a.btn-border {
+    border: 2px solid #000;
+    border-radius: 0;
+    background: #fff;
   }
+  
+a.btn-border:hover {
+    color: #fff;
+    background: #000;
+}
+  
+.footer {
+  margin: 0;
+  padding: .5em;
+  position: relative;
+  top: 30px;
+  background-color: #1b1b1b;
+}
+
+.footer a,
+.footer p {
+    color: #999;
+    text-align: center;
+}
+
+.footer .section {
+    width: 80%;
+    align-items: center;
+    border-top: 4px #999;
+}
+
+.footer .right{
+}
