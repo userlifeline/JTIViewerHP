@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="style.css" rel="stylesheet" type="text/css" media="all">
+        <link href="images/icon/icon.png" rel="shortcut icon">
+
+        <!--prefixの設定-->
+        <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#"></head> <!--Twitterとかで拡散されたときに使えるらしい-->
+        <!--THE END-->
+
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="JTIViewer">
+        <meta property="og:description" content="Windows上で津波情報を表示するアプリケーション、JTIViewer。">
+        <meta property="twitter:card" content="summary card">
+
+        <title>JTIViewer | 詳細</title>
+    </head>
+    <body class="back">
+        <header>
+            <img class="icon-image" src="images/icon/icon.png">
+            <div>
+                <a href="index.html"><p>JTIViewer</p></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="menu-content">ホーム</a></li>
+                    <li><a href="details.html" class="menu-content">詳細</a></li>
+                    <li><a href="download.html" class="menu-content">ダウンロード</a></li>
+                    <li><a href="qa.html" class="menu-content">Q&A</a></li>
+                    <li><a href="contact.html" class="menu-content">連絡先</a></li>
+                    <li><a href="misc.html" class="menu-content">その他</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div style="position: relative; top: 100px;">
+            <div class="content">
+                <p class="detail-title">実行要件</p>
+                <hr>
+                <table class="table">
+                    <tr>
+                        <th class="header" style="font-size: small; text-align: left;">OS</th>
+                        <th class="header" style="font-size: small; text-align: left;">.Net</th>
+                    </tr>
+                    <tr>
+                        <td class="content" style="font-size: large; font-style: bold;">Windows10(version1709)+ x86 / x64</td>
+                        <td class="content" style="font-size: large; font-style: bold;">.Net Framework 4.7.2</td>
+                    </tr>
+                </table>
+                <p class="detail-title">詳細</p>
+                <hr>
+                <p class="detail-text">このアプリは気象庁XML電文を利用して、津波情報(VTSE41, VTSE51, VTSE52)を表示するものです。</p>
+                <p class="detail-text">通常の情報をリスト形式で表示する機能のほか、地図を表示する機能、棒読みちゃんに読み上げてもらう機能を搭載しています。</p>
+                <p class="detail-text">また、各自で取得した電文ファイルやオンライン上の電文を利用して同様に表示させることができます。</p>
+                <table class="table">
+                    <tr>
+                        <td><img class="table-image" src="images/thumbnail/1.png"></td>
+                        <td><img class="table-image" src="images/thumbnail/2.png"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="box-content">
+                            <p class="title">津波情報をリストで表示する</p>
+                            <p class="discription" style="text-align: center;">気象庁など様々な場所から取得した情報(VTSE41, VTSE51, VTSE52)を表示します。</p>
+                        </td>
+                    </tr>
+                </table>
+                <table class="table">
+                    <tr>
+                        <td><img class="table-image" src="images/thumbnail/3.png"></td>
+                        <td><img class="table-image" src="images/thumbnail/4.png"></td>
+                    </tr>
+                    <tr>
+                        <td class="box-content">
+                            <p class="title">津波情報 WITH 棒読みちゃん</p>
+                            <p class="discription" style="text-align: center;">棒読みちゃんとの連携設定で気象庁など様々な場所から取得した情報(VTSE41, VTSE51, VTSE52)を棒読みちゃんに読み上げてもらうことができます。</p>
+                        </td>
+                        <td class="box-content">
+                            <p class="title">津波情報を地図で表示する</p>
+                            <p class="discription" style="text-align: center;">(VTSE41に限り)津波情報を地図で表示します。</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="modern-box" style="height: 9rem;">
+                <a href="download.html" class="btn btn-border">Download</a>
+                <div class="box-content">
+                    <p class="title" style="text-align: left;">ダウンロード</p>
+                    <p class="discription">ダウンロードをした時点で、利用規約など各種規約に同意したことになります。</p>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>2022 userlifeline, JTIViewer</p>
+                <hr>
+                <p>This page was written by userlifeline</p>
+                <p class="right">Copyright 2022 userlifeline, ALL RIGHTS RESERVED</p>
+            </div>
+        </div>
+    </body>
+</html>

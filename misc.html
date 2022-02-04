@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="style.css" rel="stylesheet" type="text/css" media="all">
+        <link href="images/icon/icon.png" rel="shortcut icon">
+
+        <!--prefixの設定-->
+        <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#"></head> <!--Twitterとかで拡散されたときに使えるらしい-->
+        <!--THE END-->
+
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="JTIViewer">
+        <meta property="og:description" content="Windows上で津波情報を表示するアプリケーション、JTIViewer。">
+        <meta property="twitter:card" content="summary card">
+
+        <title>JTIViewer | その他</title>
+    </head>
+    <body class="back">
+        <header>
+            <img class="icon-image" src="images/icon/icon.png">
+            <div>
+                <a href="index.html"><p>JTIViewer</p></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="menu-content">ホーム</a></li>
+                    <li><a href="details.html" class="menu-content">詳細</a></li>
+                    <li><a href="download.html" class="menu-content">ダウンロード</a></li>
+                    <li><a href="qa.html" class="menu-content">Q&A</a></li>
+                    <li><a href="contact.html" class="menu-content">連絡先</a></li>
+                    <li><a href="misc.html" class="menu-content">その他</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div style="position: relative; top: 100px;">
+            <div class="content">
+                <h2 class="page-title">その他</h2>
+                <p class="detail-text">その他、アプリに関する情報を掲載しています。</p>
+
+                <p class="detail-title">お知らせ</p>
+                <hr>
+                <div class="sub-content">
+                    <details>
+                        <summary class="detail-title cat-significant"><span class="filename">気象庁XMLを参照</span>押下時の取得先について</summary>
+                        <p class="detail-text">現行(2022/02現在)のPULL型はHTTP(非暗号化)接続でしたが、2021/12/24の気象庁情報基盤部の発表により、2022/03/15を以ってhttpでの接続を終了し、https(常時暗号化)接続に切り替える仕様に変更となりました.</p>
+                    <blockquote>
+                        <p class="detail-text">
+                            令和 4 年（2022 年）3 月 15 日に気象庁ホームページ（ <a href="https://www.jma.go.jp/" target="_blank" rel="noopener noreferrer" class="link-color-none">https://www.jma.go.jp/</a>, <a href="https://www.data.jma.go.jp/" target="_blank" rel="noopener noreferrer" class="link-color-none">https://www.data.jma.go.jp/</a> ）を常時暗号化し、http のサービスを終了することに伴い、同ホームページ上で運用している「気象庁防災情報 XML フォーマット形式電文の PULL 型提供環境」においても、一部仕様の変更を行います。
+                        </p>
+                    </blockquote>
+                    <p class="detail-text">これにより、現在オンラインの取得元として利用しているhttpによる接続を先行して終了し、現在既に公開されているhttps接続に変更しました.</p>
+                    </details>
+                    <hr>
+                </div>
+
+                <p class="detail-title">アプリ使用上の注意</p>
+                <hr>
+                <div class="sub-content">
+                    <ul>
+                        <li class="detail-text">アプリケーションの利用規約に関しては「<a href="https://github.com/userlifeline/LICENSEs/blob/main/LICENSE.md" target="_blank" rel="noopener noreferrer" class="link-color-none">Lifeline's Appシリーズ 利用規約</a>(キャプチャ機能について第2章-第5条-第1項除く)」、「<a href="https://github.com/userlifeline/LICENSEs/blob/main/EULA.md" target="_blank" rel="noopener noreferrer" class="link-color-none">Lifeline's Appエンドユーザーライセンス事項</a>」、「<a href="https://github.com/userlifeline/LICENSEs/blob/main/PRIVACYPOLICY.md" target="_blank" rel="noopener noreferrer" class="link-color-none">プライバシーポリシー</a>」を適用します。</li>
+                        <li class="detail-text">詳細な規約については上記3つの規約と情報元の<a href="https://www.jma.go.jp" target="_blank" rel="noopener noreferrer" class="link-color-none">気象庁</a>の規約に準じます。</li>
+                        <li class="detail-text">Koruriフォントを使用しています。<br>ライセンスは<span class="filename">font > LICENSE</span>に準じます。</li>
+                        <li class="detail-text">このアプリを利用したことによるPCの破損・損壊については開発者は一切の責任を負いかねます。</li>
+                        <li class="detail-text">このアプリの効果音以外のものについて、これらに関する権利はすべて開発者である生命線にあります。</li>
+                        <li class="detail-text">情報は<a href="https://www.jma.go.jp" target="_blank" rel="noopener noreferrer" class="link-color-none">気象庁</a>のものを改変利用しています。</li>
+                        <li class="detail-text">情報取得に関しては<a href="https://www.jma.go.jp/jma/kishou/info/coment.html" target="_blank" rel="noopener noreferrer" class="link-color-none">気象庁ホームページ利用規約</a>に記載されている「<a href="https://creativecommons.org/licenses/by/4.0/legalcode.ja" target="_blank" rel="noopener noreferrer" class="link-color-none">クリエイティブコモンズ 表示 4.0 国際</a>」遵守です。</li>
+                        <li class="detail-text">スクリーンショット、クリップボードについては<a href="https://github.com/userlifeline/LICENSEs/blob/main/LICENSE.md" target="_blank" rel="noopener noreferrer" class="link-color-none">Lifeline's Appシリーズ 利用規約</a>に則り、<span class="filename">JTIViewer &lt;アプリバージョン&gt;</span>の文字を挿入しています(開発者は省略)。</li>
+                    </ul>
+                    <p class="detail-title">スクリーンショット、クリップボードに保存した画像について</p>
+                    <hr>
+                    <div class="sub-content">
+                        <p class="detail-text">本来ならばLifeline's Appシリーズ 利用規約に則って文字としてのアプリ名・開発者名の記載を指定していますが、アプリケーションで出力した画像についてはアプリ側でアプリ名を挿入していますので<span style="font-weight: bold;">原則として(追加で加工等を行って文字を消す等を行わない限り)</span>記載する必要はありません。</p>
+                        <p class="detail-text" style="font-weight: bold;">[注] なお、他のスクリーンショットアプリ(Windows標準スクリーンショット機能、ShareXなど)で撮影されたものについては利用規約に則って開発者名・アプリ名の記載をお願いいたします。</p>
+                        <p class="detail-text">また、作成された画像については上記の条件を守ったうえで、「<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="link-color-none">クリエイティブコモンズ 表示 - 継承 4.0 国際</a>」を適用します。</p>
+                        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+                    </div>
+                </div>
+
+                <p class="detail-title">開発に携わっていただいた方々</p>
+                <hr>
+                <div class="sub-content">
+                    <p class="detail-title">SPECIAL THANKS</p>
+                    <hr>
+                    <div class="sub-content">
+                        <table class="thanks-table">
+                            <tr>
+                                <th class="header">特別開発支援</th>
+                                <th class="header">効果音作成</th>
+                            </tr>
+                            <tr>
+                                <td class="content">taifun-dairekuto様 <a href="https://twitter.com/taifun_dairekut" target="_blank" rel="noopener noreferrer" class="link-color-none">Twitter</a></td>
+                                <td class="content">cube90様</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p class="detail-title">THANKS</p>
+                    <hr>
+                    <div class="sub-content">
+                        <table class="thanks-table">
+                            <tr>
+                                <th class="header">情報提供</th>
+                                <th class="header">デバッグ協力</th>
+                            </tr>
+                            <tr>
+                                <td class="content">気象庁</td>
+                                <td class="content" style="font-size: .9em;">デバッガーサーバー「Lifeline's App」に参加されている方々</td>
+                                <td class="content">その他支援してくださった方々</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <blockquote>
+                    <p class="detail-text" style="text-align: center;">このアプリが皆さまの地震監視・観測に利用していただけると願って。</p>
+                </blockquote>
+            </div>
+            <div class="footer">
+                <p>2022 userlifeline, JTIViewer</p>
+                <hr>
+                <p>This page was written by userlifeline</p>
+                <p class="right">Copyright 2022 userlifeline, ALL RIGHTS RESERVED</p>
+            </div>
+        </div>
+    </body>
+</html>
