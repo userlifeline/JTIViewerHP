@@ -187,6 +187,7 @@ a.btn-border:hover {
 .footer p {
     color: #999;
     text-align: center;
+    font-size: .5rem;
 }
 
 .footer hr {
