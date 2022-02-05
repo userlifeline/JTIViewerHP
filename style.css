@@ -521,3 +521,11 @@ blockquote {
 
 .thanks-table-item {
 }
+
+summary.detail-title {
+    font-size: 1em;
+}
+
+details.detail-text {
+    font-size: 1em;
+}
