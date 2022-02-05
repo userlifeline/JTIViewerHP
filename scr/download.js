@@ -10,7 +10,7 @@ var req = new XMLHttpRequest();		  // XMLHttpRequest オブジェクトを生成
       jsonReport = req.responseText;		          // 取得した JSON ファイルの中身を表示
     }
   };
-  req.open("GET", "https://userlifeline.github.io/JTIViewerHP/versionList.json", false); // HTTPメソッドとアクセスするサーバーの　URL　を指定
+  req.open("GET", "https://raw.githubusercontent.com/userlifeline/JTIViewerHP/master/versionList.json", false); // HTTPメソッドとアクセスするサーバーの　URL　を指定
   req.send(null);					    // 実際にサーバーへリクエストを送信
 
 const jsonObj = JSON.parse(jsonReport);
