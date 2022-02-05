@@ -42,23 +42,29 @@
 
         <div style="position: relative; top: 100px;">
             <div class="content">
-                <p class="detail-title">実行要件</p>
+                <p class="detail-title">推奨実行環境</p>
                 <hr>
                 <table class="table">
                     <tr>
                         <th class="header" style="font-size: small; text-align: left;">OS</th>
+                        <th class="header" style="font-size: small; text-align: left;">RAM</th>
+                        <th class="header" style="font-size: small; text-align: left;">CPU</th>
                         <th class="header" style="font-size: small; text-align: left;">.Net</th>
                     </tr>
                     <tr>
-                        <td class="content" style="font-size: large; font-style: bold;">Windows10(version1709)+ x86 / x64</td>
-                        <td class="content" style="font-size: large; font-style: bold;">.Net Framework 4.7.2</td>
+                        <td class="content" style="font-size: large; font-style: bold;">Windows7+ x86 / x64</td>
+                        <td class="content" style="font-size: large; font-style: bold;">4GB+</td>
+                        <td class="content" style="font-size: large; font-style: bold;">2コア+</td>
+                        <td class="content" style="font-size: large; font-style: bold;">.Net Framework 4.7.2<split style="color: brown;"> *必須</split></td>
                     </tr>
                 </table>
+                <ul>
+                    <li class="detail-text">最低限、.Net Framework 4.7.2が実行できる環境である必要があります。</li>
+                    <li class="detail-text">.Netについては実行に必須です</li>
+                </ul>
+
                 <p class="detail-title">詳細</p>
                 <hr>
-                <p class="detail-text">このアプリは気象庁XML電文を利用して、津波情報(VTSE41, VTSE51, VTSE52)を表示するものです。</p>
-                <p class="detail-text">通常の情報をリスト形式で表示する機能のほか、地図を表示する機能、棒読みちゃんに読み上げてもらう機能を搭載しています。</p>
-                <p class="detail-text">また、各自で取得した電文ファイルやオンライン上の電文を利用して同様に表示させることができます。</p>
                 <table class="table">
                     <tr>
                         <td><img class="table-image" src="images/thumbnail/1.png"></td>
@@ -87,6 +93,22 @@
                         </td>
                     </tr>
                 </table>
+                <table class="table">
+                    <tr>
+                        <td><img class="table-image" src="images/thumbnail/5.png"></td>
+                        <td><img class="table-image" src="images/thumbnail/6.png"></td>
+                    </tr>
+                    <tr>
+                        <td class="box-content">
+                            <p class="title">表示させる情報は様々な場所から</p>
+                            <p class="discription" style="text-align: center;">アプリで表示させる情報は気象庁XMLに限らず、オンライン上のXML電文、ローカルデータに対応しています。<br><split style="font-size: .2em;">オンライン上のXML電文、ローカルデータのXMLファイルは<a href="http://xml.kishou.go.jp/jmaxml_20160331_format_v1_2.pdf" target=_blank rel="noopener noreferrer" class="link-color-none">気象庁防災情報XMLフォーマット Ver.1.2</a>に準じていること。</split></p>
+                        </td>
+                        <td class="box-content">
+                            <p class="title">テロップ表示</p>
+                            <p class="discription" style="text-align: center;">(設定により)津波情報発表・更新時に画像のようなテロップを表示することができます。<br>通常時はグリーンバックになっているので、OBS等でカラーキーを設定しておけば簡易的な警告テロップになります。</p>
+                        </td>
+                    </tr>
+                </table>
             </div>
             <div class="modern-box" style="height: 9rem;">
                 <a href="download.html" class="btn btn-border">Download</a>
@@ -99,7 +121,9 @@
             <div class="footer">
                 <p>2022 userlifeline, JTIViewer</p>
                 <hr>
-                <p>This page was written by userlifeline</p>
+                <p>Created by userlifeline</p>
+                <p>開発者の許可を得ていない状態かつ引用目的以外でのこのホームページにあるすべてのコンテンツの利用、改変およびそれに付随する行為を一切禁止します。</p>
+                <p>All content on this page without the permission of the developer and for purposes other than citation is prohibited.</p>
                 <p class="right">Copyright 2022 userlifeline, ALL RIGHTS RESERVED</p>
             </div>
         </div>

@@ -492,6 +492,11 @@ blockquote {
     color: #ca2727;
 }
 
+.cat-notice::before {
+    content: "【お知らせ】";
+    color: #278eca;
+}
+
 .thanks li {
     display: inline-block;
 }
@@ -525,4 +530,24 @@ blockquote {
 summary.detail-title,
 details.p.detail-text {
     font-size: 1em;
+}
+
+.version-table {
+    margin: auto;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.version-table .header {
+    color: rgb(201, 201, 201);
+    border-bottom: 2px rgb(56, 56, 56) solid;
+    font-size: small;
+    text-align: left;
+}
+
+.version-table .content {
+    color: #999;
+    text-align: right;
+    font-size: large;
+    font-weight: bold;
 }

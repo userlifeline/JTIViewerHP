@@ -48,6 +48,7 @@
                 <p class="detail-title">お知らせ</p>
                 <hr>
                 <div class="sub-content">
+                    <span>
                     <details>
                         <summary class="detail-title cat-significant"><span class="filename">気象庁XMLを参照</span>押下時の取得先について</summary>
                         <p class="detail-text">現行(2022/02現在)のPULL型はHTTP(非暗号化)接続でしたが、2021/12/24の気象庁情報基盤部の発表により、2022/03/15を以ってhttpでの接続を終了し、https(常時暗号化)接続に切り替える仕様に変更となりました.</p>
@@ -59,6 +60,14 @@
                     <p class="detail-text">これにより、現在オンラインの取得元として利用しているhttpによる接続を先行して終了し、現在既に公開されているhttps接続に変更しました.</p>
                     </details>
                     <hr>
+                    </span>
+                    <span>
+                    <details>
+                        <summary class="detail-title cat-notice">情報自動更新について</summary>
+                        <p class="detail-text">気象庁XMLからの自動更新を有効にしている場合、高頻度フィードの更新間隔が約1分間隔なので、情報取得に若干のずれがある可能性があります。</p>
+                    </details>
+                    <hr>
+                    </span>
                 </div>
 
                 <p class="detail-title">アプリ使用上の注意</p>
@@ -116,16 +125,20 @@
                             </tr>
                         </table>
                     </div>
+                    <p class="detail-text" style="text-align: right; font-size: .2em;">AND YOU</p>
                 </div>
 
                 <blockquote>
                     <p class="detail-text" style="text-align: center;">このアプリが皆さまの地震監視・観測に利用していただけると願って。</p>
                 </blockquote>
             </div>
+
             <div class="footer">
                 <p>2022 userlifeline, JTIViewer</p>
                 <hr>
-                <p>This page was written by userlifeline</p>
+                <p>Created by userlifeline</p>
+                <p>開発者の許可を得ていない状態かつ引用目的以外でのこのホームページにあるすべてのコンテンツの利用、改変およびそれに付随する行為を一切禁止します。</p>
+                <p>All content on this page without the permission of the developer and for purposes other than citation is prohibited.</p>
                 <p class="right">Copyright 2022 userlifeline, ALL RIGHTS RESERVED</p>
             </div>
         </div>
