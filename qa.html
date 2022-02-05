@@ -3,8 +3,9 @@
     <head>
         <meta charset="utf-8">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <link href="https://userlifeline.github.io/JTIViewerHP/style.css" rel="stylesheet" type="text/css" media="all">
+        <link href="style.css" rel="stylesheet" type="text/css" media="all">
         <link href="images/icon/icon.png" rel="shortcut icon">
+        <link href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="stylesheet"><!--アイコン表示のあれ-->
 
         <!--prefixの設定-->
         <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#"></head> <!--Twitterとかで拡散されたときに使えるらしい-->
@@ -30,39 +31,38 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html" class="menu-content">ホーム</a></li>
-                    <li><a href="details.html" class="menu-content">詳細</a></li>
-                    <li><a href="download.html" class="menu-content">ダウンロード</a></li>
-                    <li><a href="qa.html" class="menu-content">Q&A</a></li>
-                    <li><a href="contact.html" class="menu-content">連絡先</a></li>
-                    <li><a href="misc.html" class="menu-content">その他</a></li>
+                    <li><a href="index.html" class="menu-content"><i class="fas fa-home" style="margin-right: .2em;"></i>ホーム</a></li>
+                    <li><a href="details.html" class="menu-content"><i class="fas fa-info-circle" style="margin-right: .2em;"></i>詳細</a></li>
+                    <li><a href="download.html" class="menu-content"><i class="fas fa-download" style="margin-right: .2em;"></i>ダウンロード</a></li>
+                    <li><a href="qa.html" class="menu-content"><i class="fab fa-teamspeak" style="margin-right: .2em;"></i>Q&A</a></li>
+                    <li><a href="misc.html" class="menu-content"><i class="fas fa-ellipsis-v" style="margin-right: .2em;"></i>その他</a></li>
                 </ul>
             </nav>
         </header>
 
         <div style="position: relative; top: 100px;">
             <div class="content">
-                <h2 class="page-title">Q&A</h2>
+                <h2 class="page-title"><i class="fab fa-teamspeak" style="margin-right: .5em;"></i>Q&A</h2>
                 <p class="detail-text">アプリに関する質問を掲載しています。</p>
                 
-                <details>
-                    <summary class="detail-title">このアプリはMac(またはLinux)に対応していますか？</summary>
-                    <p class="detail-text">このアプリはWindows専用です。Max、Linuxへの対応はありません。ご了承ください。</p>
+                <details class="twist">
+                    <summary class="detail-title"><i class="fab fa-quora" style="margin-right: .5em;"></i>このアプリはMac(またはLinux)に対応していますか？</summary>
+                    <p class="detail-text"><i class="fas fa-comment-dots" style="margin-right: .5em;"></i>このアプリはWindows専用です。Max、Linuxへの対応はありません。ご了承ください。</p>
                 </details>
                 <hr>
-                <details>
-                    <summary class="detail-title">このアプリは<a href="https://dmdata.jp/" target="_blank" rel="noopener noreferrer" class="link-color-none">dmdata</a>への対応はありますか？</summary>
-                    <p class="detail-text">dmdataへの対応は検討されていません。</p>
+                <details class="twist">
+                    <summary class="detail-title"><i class="fab fa-quora" style="margin-right: .5em;"></i>このアプリはdmdata<a href="https://dmdata.jp/" target="_blank" rel="noopener noreferrer" class="link-color-none"><i class="fas fa-external-link-alt" style="margin-left: .5em;"></i></a>への対応はありますか？</summary>
+                    <p class="detail-text"><i class="fas fa-comment-dots" style="margin-right: .5em;"></i>dmdataへの対応は検討されていません。</p>
                 </details>
                 <hr>
-                <details>
-                    <summary class="detail-title">音声ファイルを変更することはできますか？</summary>
-                    <p class="detail-text"><span class="filename">sound</span>フォルダに各情報の効果音ファイルがあります。そちらを変更することで切り替えが可能です。</p>
+                <details class="twist">
+                    <summary class="detail-title"><i class="fab fa-quora" style="margin-right: .5em;"></i>音声ファイルを変更することはできますか？</summary>
+                    <p class="detail-text"><i class="fas fa-comment-dots" style="margin-right: .5em;"></i><span class="filename">sound</span>フォルダに各情報の効果音ファイルがあります。そちらを変更することで切り替えが可能です。</p>
                 </details>
                 <hr>
-                <details>
-                    <summary class="detail-title">ページをめくる方法が分かりません</summary>
-                    <p class="detail-text">情報が5つ以上ある状態で次のキーを押すことでページをめくることができます。</p>
+                <details class="twist">
+                    <summary class="detail-title"><i class="fab fa-quora" style="margin-right: .5em;"></i>ページをめくる方法が分かりません</summary>
+                    <p class="detail-text"><i class="fas fa-comment-dots" style="margin-right: .5em;"></i>情報が5つ以上ある状態で次のキーを押すことでページをめくることができます。</p>
                     <ul>
                         <li class="detail-text">矢印(上下 / 左右)</li>
                         <li class="detail-text">PageUp / Down</li>
@@ -70,14 +70,14 @@
                     </ul>
                 </details>
                 <hr>
-                <details>
-                    <summary class="detail-title">設定ファイル<span class="filename">setting.ini</span>を誤って消去してしまいました。</summary>
-                    <p class="detail-text">設定ファイルは起動時に存在していない存在していないことが確認されたときに自動で生成されます。<br>設定は初期化されますが、アプリの運用に問題はありません。</p>
+                <details class="twist">
+                    <summary class="detail-title"><i class="fas fa-info" style="margin-right: .5em;"></i>設定ファイル<span class="filename">setting.ini</span>を誤って消去してしまいました。</summary>
+                    <p class="detail-text"><i class="fas fa-comment-dots" style="margin-right: .5em;"></i>設定ファイルは起動時に存在していない存在していないことが確認されたときに自動で生成されます。<br>設定は初期化されますが、アプリの運用に問題はありません。</p>
                 </details>
                 <hr>
-                <details>
-                    <summary class="detail-title"><span class="filename">エラーが発生しました</span>と言ってアプリケーションが強制終了しました。</summary>
-                    <p class="detail-text">アプリ内で処理できない例外が発生した場合に排出されます。<br>通常の実行でこの表示が出た場合は<span class="caution">実行ファイルと同層にある</span><span class="filename">(時刻).jtiviewerexception</span>をデバッガーサーバーに共有していただけると幸いです。</p>
+                <details class="twist">
+                    <summary class="detail-title"><i class="fas fa-info" style="margin-right: .5em;"></i><span class="filename">エラーが発生しました</span>と言ってアプリケーションが強制終了しました。</summary>
+                    <p class="detail-text"><i class="fas fa-comment-dots" style="margin-right: .5em;"></i>アプリ内で処理できない例外が発生した場合に排出されます。<br>通常の実行でこの表示が出た場合は<span class="caution">実行ファイルと同層にある</span><span class="filename">(時刻).jtiviewerexception</span>をデバッガーサーバーに共有していただけると幸いです。</p>
                 </details>
                 <hr>
             </div>

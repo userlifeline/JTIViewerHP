@@ -5,6 +5,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link href="https://userlifeline.github.io/JTIViewerHP/style.css" rel="stylesheet" type="text/css" media="all">
         <link href="images/icon/icon.png" rel="shortcut icon">
+        <link href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="stylesheet"><!--アイコン表示のあれ-->
 
         <!--prefixの設定-->
         <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#"></head> <!--Twitterとかで拡散されたときに使えるらしい-->
@@ -30,29 +31,28 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html" class="menu-content">ホーム</a></li>
-                    <li><a href="details.html" class="menu-content">詳細</a></li>
-                    <li><a href="download.html" class="menu-content">ダウンロード</a></li>
-                    <li><a href="qa.html" class="menu-content">Q&A</a></li>
-                    <li><a href="contact.html" class="menu-content">連絡先</a></li>
-                    <li><a href="misc.html" class="menu-content">その他</a></li>
+                    <li><a href="index.html" class="menu-content"><i class="fas fa-home" style="margin-right: .2em;"></i>ホーム</a></li>
+                    <li><a href="details.html" class="menu-content"><i class="fas fa-info-circle" style="margin-right: .2em;"></i>詳細</a></li>
+                    <li><a href="download.html" class="menu-content"><i class="fas fa-download" style="margin-right: .2em;"></i>ダウンロード</a></li>
+                    <li><a href="qa.html" class="menu-content"><i class="fab fa-teamspeak" style="margin-right: .2em;"></i>Q&A</a></li>
+                    <li><a href="misc.html" class="menu-content"><i class="fas fa-ellipsis-v" style="margin-right: .2em;"></i>その他</a></li>
                 </ul>
             </nav>
         </header>
 
         <div style="position: relative; top: 100px;">
             <div class="content">
-                <p class="detail-title">推奨実行環境</p>
+                <p class="detail-title"><i class="fas fa-desktop" style="margin-right: .5em;"></i>推奨実行環境</p>
                 <hr>
                 <table class="table">
                     <tr>
-                        <th class="header" style="font-size: small; text-align: left;">OS</th>
-                        <th class="header" style="font-size: small; text-align: left;">RAM</th>
-                        <th class="header" style="font-size: small; text-align: left;">CPU</th>
-                        <th class="header" style="font-size: small; text-align: left;">.Net</th>
+                        <th class="header" style="font-size: small; text-align: left;"><i class="fas fa-cogs" style="margin-right: .5em;"></i>OS</th>
+                        <th class="header" style="font-size: small; text-align: left;"><i class="fas fa-memory" style="margin-right: .5em;"></i>RAM</th>
+                        <th class="header" style="font-size: small; text-align: left;"><i class="fas fa-microchip" style="margin-right: .5em;"></i>CPU</th>
+                        <th class="header" style="font-size: small; text-align: left;"><i class="fas fa-running" style="margin-right: .5em;"></i>.Net</th>
                     </tr>
                     <tr>
-                        <td class="content" style="font-size: large; font-style: bold;">Windows7+ x86 / x64</td>
+                        <td class="content" style="font-size: large; font-style: bold;"><i class="fab fa-windows" style="margin-right: .5em;"></i>Windows7+ x86 / x64</td>
                         <td class="content" style="font-size: large; font-style: bold;">4GB+</td>
                         <td class="content" style="font-size: large; font-style: bold;">2コア+</td>
                         <td class="content" style="font-size: large; font-style: bold;">.Net Framework 4.7.2<split style="color: brown;"> *必須</split></td>
@@ -61,9 +61,10 @@
                 <ul>
                     <li class="detail-text">最低限、.Net Framework 4.7.2が実行できる環境である必要があります。</li>
                     <li class="detail-text">.Netについては実行に必須です</li>
+                    <li class="detail-text"><a href="https://dotnet.microsoft.com/ja-jp/download/dotnet-framework/net472" target="_blank" rel="noopener noreferrer" class="link-color-none">.Net Framework 4.7.2のインストール<i class="fas fa-external-link-alt" style="margin-left: .2em;"></i></a></li>
                 </ul>
 
-                <p class="detail-title">詳細</p>
+                <p class="detail-title"><i class="fas fa-info-circle" style="margin-right: .5em;"></i>詳細</p>
                 <hr>
                 <table class="table">
                     <tr>
@@ -72,7 +73,7 @@
                     </tr>
                     <tr>
                         <td colspan="2" class="box-content">
-                            <p class="title">津波情報をリストで表示する</p>
+                            <p class="title"><i class="fas fa-list" style="margin-right: .5em;"></i>津波情報をリストで表示する</p>
                             <p class="discription" style="text-align: center;">気象庁など様々な場所から取得した情報(VTSE41, VTSE51, VTSE52)を表示します。</p>
                         </td>
                     </tr>
@@ -80,15 +81,15 @@
                 <table class="table">
                     <tr>
                         <td><img class="table-image" src="images/thumbnail/3.png"></td>
-                        <td><img class="table-image" src="images/thumbnail/4.png"></td>
+                        <td><img class="table-image" src="images/thumbnail/4.gif"></td>
                     </tr>
                     <tr>
                         <td class="box-content">
-                            <p class="title">津波情報 WITH 棒読みちゃん</p>
+                            <p class="title"><i class="fas fa-volume-up" style="margin-right: .5em;"></i>津波情報 WITH 棒読みちゃん</p>
                             <p class="discription" style="text-align: center;">棒読みちゃんとの連携設定で気象庁など様々な場所から取得した情報(VTSE41, VTSE51, VTSE52)を棒読みちゃんに読み上げてもらうことができます。</p>
                         </td>
                         <td class="box-content">
-                            <p class="title">津波情報を地図で表示する</p>
+                            <p class="title"><i class="fas fa-map" style="margin-right: .5em;"></i>津波情報を地図で表示する</p>
                             <p class="discription" style="text-align: center;">(VTSE41に限り)津波情報を地図で表示します。</p>
                         </td>
                     </tr>
@@ -100,11 +101,11 @@
                     </tr>
                     <tr>
                         <td class="box-content">
-                            <p class="title">表示させる情報は様々な場所から</p>
-                            <p class="discription" style="text-align: center;">アプリで表示させる情報は気象庁XMLに限らず、オンライン上のXML電文、ローカルデータに対応しています。<br><split style="font-size: .2em;">オンライン上のXML電文、ローカルデータのXMLファイルは<a href="http://xml.kishou.go.jp/jmaxml_20160331_format_v1_2.pdf" target=_blank rel="noopener noreferrer" class="link-color-none">気象庁防災情報XMLフォーマット Ver.1.2</a>に準じていること。</split></p>
+                            <p class="title"><i class="fas fa-file-code" style="margin-right: .5em;"></i>表示させる情報は様々な場所から</p>
+                            <p class="discription" style="text-align: center;">アプリで表示させる情報は気象庁XMLに限らず、オンライン上のXML電文、ローカルデータに対応しています。<br><split style="font-size: .2em;">オンライン上のXML電文、ローカルデータのXMLファイルは<a href="http://xml.kishou.go.jp/jmaxml_20160331_format_v1_2.pdf" target=_blank rel="noopener noreferrer" class="link-color-none">気象庁防災情報XMLフォーマット Ver.1.2<i class="fas fa-file-pdf" style="margin-left: .2em; margin-right: .5em;"></i></a>に準じていること。</split></p>
                         </td>
                         <td class="box-content">
-                            <p class="title">テロップ表示</p>
+                            <p class="title"><i class="fas fa-satellite-dish" style="margin-right: .5em;"></i>テロップ表示</p>
                             <p class="discription" style="text-align: center;">(設定により)津波情報発表・更新時に画像のようなテロップを表示することができます。<br>通常時はグリーンバックになっているので、OBS等でカラーキーを設定しておけば簡易的な警告テロップになります。</p>
                         </td>
                     </tr>
@@ -113,7 +114,7 @@
             <div class="modern-box" style="height: 9rem;">
                 <a href="download.html" class="btn btn-border">Download</a>
                 <div class="box-content">
-                    <p class="title" style="text-align: left;">ダウンロード</p>
+                    <p class="title" style="text-align: left;"><i class="fas fa-download" style="margin-right: .5em;"></i>ダウンロード</p>
                     <p class="discription">ダウンロードをした時点で、利用規約など各種規約に同意したことになります。</p>
                 </div>
             </div>

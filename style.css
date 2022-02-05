@@ -488,13 +488,23 @@ blockquote {
 }
 
 .cat-significant::before {
-    content: "【重要】";
+    content: "重要";
+    font-size: small;
     color: #ca2727;
+    border: 1px #ca2727 solid;
+    margin: 0 1em 0 0;
+    padding: 0 .2em;
+    vertical-align: middle;
 }
 
 .cat-notice::before {
-    content: "【お知らせ】";
-    color: #278eca;
+    content: "お知らせ";
+    font-size: small;
+    color: #279cca;
+    border: 1px #279cca solid;
+    margin: 0 1em 0 0;
+    padding: 0 .2em;
+    vertical-align: middle;
 }
 
 .thanks li {
@@ -550,4 +560,20 @@ details.p.detail-text {
     text-align: right;
     font-size: large;
     font-weight: bold;
+}
+
+.twist summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+.twist summary::-webkit-details-marker {
+    display: none;
+    cursor: pointer;
+}
+
+.information summary::before {
+    font-family: "Font Awesome 5 Free";
+    content: '\f067';
+    margin-right: .5rem;
 }
