@@ -52,6 +52,26 @@ header li {
 	 font-size: 14px;
 }
 
+.left {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right {
+    width: 100%;
+    display: flex;
+}
+
+.right ul {
+    margin-left: auto;
+    margin-right: 5rem;
+}
+
+.menu-sns-icon {
+    height: 120%;
+    width: 120%;
+}
+
 .menu-content {
     text-transform: uppercase;
     text-align: center;
