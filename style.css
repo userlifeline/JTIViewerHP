@@ -523,6 +523,6 @@ blockquote {
 }
 
 summary.detail-title,
-details.detail-text {
+details.p.detail-text {
     font-size: 1em;
 }
