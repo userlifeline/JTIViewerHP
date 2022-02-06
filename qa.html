@@ -54,7 +54,7 @@
                 <hr>
                 <details class="twist">
                     <summary class="detail-title"><i class="fab fa-quora" style="margin-right: .5em;"></i>このアプリはdmdata<a href="https://dmdata.jp/" target="_blank" rel="noopener noreferrer" class="link-color-none"><i class="fas fa-external-link-alt" style="margin-left: .5em;"></i></a>への対応はありますか？</summary>
-                    <p class="detail-text"><i class="fas fa-comment-dots" style="margin-right: .5em;"></i>dmdataへの対応は検討されていません。</p>
+                    <p class="detail-text"><i class="fas fa-comment-dots" style="margin-right: .5em;"></i>対応していません。<br>また、今後のdmdataへの対応は検討されていません。</p>
                 </details>
                 <hr>
                 <details class="twist">
@@ -73,6 +73,27 @@
                 </details>
                 <hr>
                 <details class="twist">
+                    <summary class="detail-title"><i class="fas fa-info" style="margin-right: .5em;"></i>棒読みちゃんとの連携の方法を教えてください。</summary>
+                    <p class="detail-text"><i class="fas fa-comment-dots" style="margin-right: .5em;"></i>以下が連携方法です</p>
+                    <p class="column-title">前提</p>
+                    <ul>
+                        <li class="detail-text">このアプリでは棒読みちゃんとの連携に<span class="filename">TCP接続</span>を使用しています。TCP接続を使用するとIPとポートを設定すると簡単に接続することができます。</li>
+                        <li class="detail-text">最新版の棒読みちゃんがインストールされており、かつ、起動している状態であることが条件です。</li>
+                    </ul>
+                    <ol>
+                        <li class="detail-text">読ませたい棒読みちゃんがあるPCの<span class="caution">ローカルIPアドレス(アプリのあるPCと異なるPCで読み上げる場合192.168.X.Xの形のもの、同じ場合は127.0.0.1かlocalhost)</span>を確認します。</li>
+                        <li class="detail-text">棒読みちゃんの<span class="filename">その他 > 情報</span>タブから<span class="caution">Socketサーバー</span>の値を確認します(既定値は<code>50001</code>)。</li>
+                        <li class="detail-text">JTIViewerの<span class="filename">棒読みちゃん</span>タブを開き、機能を有効にします(津波発表時・更新時に棒読みちゃんに読み上げてもらうにチェックを入れる)。</li>
+                        <li class="detail-text">先ほど確認したIPアドレスとポートをそれぞれの項目に入力します。</li>
+                        <li class="detail-text"><span class="caution">設定を保存して反映</span>を押して棒読みちゃんとの連携を行います。</li>
+                    </ol>
+                    <ul>
+                        <li class="detail-text"><span class="filename">設定を保存して反映</span>を押した後は読み上げテストを行うことを推奨します。</li>
+                        <li class="detail-text">棒読みちゃん関係のすべての機能について開発者ができるだけデバッグしていますが、不具合が発生した場合は開発者にご連絡ください。</li>
+                    </ul>
+                </details>
+                <hr>
+                <details class="twist">
                     <summary class="detail-title"><i class="fas fa-info" style="margin-right: .5em;"></i>設定ファイル<span class="filename">setting.ini</span>を誤って消去してしまいました。</summary>
                     <p class="detail-text"><i class="fas fa-comment-dots" style="margin-right: .5em;"></i>設定ファイルは起動時に存在していない存在していないことが確認されたときに自動で生成されます。<br>設定は初期化されますが、アプリの運用に問題はありません。</p>
                 </details>
@@ -80,6 +101,11 @@
                 <details class="twist">
                     <summary class="detail-title"><i class="fas fa-info" style="margin-right: .5em;"></i><span class="filename">エラーが発生しました</span>と言ってアプリケーションが強制終了しました。</summary>
                     <p class="detail-text"><i class="fas fa-comment-dots" style="margin-right: .5em;"></i>アプリ内で処理できない例外が発生した場合に排出されます。<br>通常の実行でこの表示が出た場合は<span class="caution">実行ファイルと同層にある</span><span class="filename">(時刻).jtiviewerexception</span>をデバッガーサーバーに共有していただけると幸いです。</p>
+                </details>
+                <hr>
+                <details class="twist">
+                    <summary class="detail-title"><i class="fas fa-info" style="margin-right: .5em;"></i>バグ(または不具合)を見つけました。&アプリについて要望があります。</summary>
+                    <p class="detail-text"><i class="fas fa-comment-dots" style="margin-right: .5em;"></i>アプリのバグ・不具合・要望についてはその他<a href="misc.html" target=_blank rel="noopener noreferrer" class="link-color-none"><i class="fas fa-link" style="margin-left: .2em; margin-right: .5em;"></i></a>に記載されている連絡先からご連絡ください。<br>実現できそうなものであればアップデートで実現するかもしれません。</p>
                 </details>
                 <hr>
             </div>
@@ -90,7 +116,7 @@
                 <p>Created by userlifeline</p>
                 <p>開発者の許可を得ていない状態かつ引用目的以外でのこのホームページにあるすべてのコンテンツの利用、改変およびそれに付随する行為を一切禁止します。</p>
                 <p>All content on this page without the permission of the developer and for purposes other than citation is prohibited.</p>
-                <p class="right">Copyright 2022 userlifeline, ALL RIGHTS RESERVED</p>
+                <p>Copyright 2022 userlifeline, ALL RIGHTS RESERVED</p>
             </div>
         </div>
     </body>

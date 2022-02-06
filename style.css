@@ -224,6 +224,7 @@ a.btn-border:hover {
 }
 
 .footer .right{
+    text-align: center;
 }
 
 .content {
@@ -247,6 +248,14 @@ a.btn-border:hover {
     padding-bottom: 0;
     color: #c9c9c9;
     font-size: large;
+    font-style: bold;
+}
+
+.content .column-title {
+    padding-top: .5em;
+    padding-bottom: 0;
+    color: #c9c9c9;
+    font-size: medium;
     font-style: bold;
 }
 
@@ -459,6 +468,10 @@ a.old-download-button-border:hover {
 }
 
 .content .caution {
+    color: #ca276b;
+}
+
+.content .warning {
     color: #ca2727;
 }
 
