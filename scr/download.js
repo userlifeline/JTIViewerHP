@@ -136,5 +136,3 @@ oldVersionList.forEach(i => {
 });
 
 console.log("All Process End");
-
-// <i class="fab fa-windows" style="margin-right: .5em;">

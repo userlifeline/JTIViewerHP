@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
     <head>
-        <!--<META http-equiv="Refresh" content="0;URL=transfer.html"/>-->
+        <META http-equiv="Refresh" content="0;URL=transfer.html"/>
         <!--ダウンロードページを公開するには上のコードをコメントアウトまたは削除(自動移動用)-->
         
         <meta charset="utf-8">
@@ -74,51 +74,16 @@
                         <td class="content" id="latestVersion"></td>
                         <td class="content" id="latestDate"></td>
                         <td class="content" id="latestSize"></td>
-                        <td class="content" id="latestOS"><i class="fab fa-windows" style="margin-right: .5em;"></i>Windows7+</td>
+                        <td class="content" id="latestOS"></td>
                         <td class="content" id="latestOSVersion"></td>
                         <td>
-                            <a href="" class="download-button download-button-border">Download<i class="link-color-none fas fa-download" style="margin-left: .5em;"></i></a>
+                            <a href="" class="download-button download-button-border" id="latestDownload">Download<i class="link-color-none fas fa-download" style="margin-left: .5em;"></i></a>
                         </td>
                     </tr>
                 </table>
                 <p class="download-title"><i class="fas fa-database" style="margin-right: .5em;"></i>過去バージョン</p>
                 <p class="detail-text">過去バージョンの正常な動作は保証しません。</p>
-                <table class="download-table">
-                    <tr>
-                        <th class="header"><i class="fas fa-layer-group" style="margin-right: .2em;"></i>バージョン</th>
-                        <th class="header"><i class="fas fa-calendar-day" style="margin-right: .2em;"></i>リリース日</th>
-                        <th class="header"><i class="fas fa-hdd" style="margin-right: .2em;"></i>容量</th>
-                        <th class="header"><i class="fas fa-cogs" style="margin-right: .2em;"></i>対応OS</th>
-                        <th class="header"><i class="fas fa-laptop" style="margin-right: .2em;"></i>対応OSバージョン</th>
-                    </tr>
-                    <tr class="download-table-item">
-                        <td class="content">0.0.0</td>
-                        <td class="content">2022/12/31</td>
-                        <td class="content">1.80MB</td>
-                        <td class="content"><i class="fab fa-windows" style="margin-right: .5em;"></i>Windows7+</td>
-                        <td class="content">x86 / x64</td>
-                        <td>
-                            <a href="" class="old-download-button old-download-button-border">Download<i class="link-color-none fas fa-download" style="margin-left: .5em;"></i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th class="header"><i class="fas fa-layer-group" style="margin-right: .2em;"></i>バージョン</th>
-                        <th class="header"><i class="fas fa-calendar-day" style="margin-right: .2em;"></i>リリース日</th>
-                        <th class="header"><i class="fas fa-hdd" style="margin-right: .2em;"></i>容量</th>
-                        <th class="header"><i class="fas fa-cogs" style="margin-right: .2em;"></i>対応OS</th>
-                        <th class="header"><i class="fas fa-laptop" style="margin-right: .2em;"></i>対応OSバージョン</th>
-                    </tr>
-                    <tr class="download-table-item">
-                        <td class="content">0.0.0</td>
-                        <td class="content">2022/12/31</td>
-                        <td class="content">1.80MB</td>
-                        <td class="content"><i class="fab fa-windows" style="margin-right: .5em;"></i>Windows7+</td>
-                        <td class="content">x86 / x64</td>
-                        <td>
-                            <a href="" class="old-download-button old-download-button-border">Download<i class="link-color-none fas fa-download" style="margin-left: .5em;"></i></a>
-                        </td>
-                    </tr>
-                </table>
+                <table class="download-table" id="old-version-table"></table><!--ここはscriptで追記するのでHTMLで文字追加するの禁止-->
                 <p class="detail-text" style="float: left;"><a href=".\faq\install.html" target="_blank" rel="noopener noreferrer" class="link-color-none">インストール方法について<i class="fas fa-link" style="margin-left: .2em; margin-right: .5em;"></i></a>詳しくご覧ください。</p>
                 <p class="detail-text" style="text-align: right;">これまでの<a href="update-log.html" target=_blank rel="noopener noreferrer" class="link-color-none">更新履歴<i class="fas fa-link" style="margin-left: .2em; margin-right: .5em;"></i></a></p>
             </div>
