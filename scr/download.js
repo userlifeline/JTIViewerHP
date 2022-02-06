@@ -18,24 +18,28 @@ const jsonObj = JSON.parse(jsonReport);
 
 console.log(jsonObj);
 
-console.log(jsonObj[0].version);
-console.log(jsonObj[0].OS)
+var latestInfo = jsonObj[jsonObj.length - 1];
 
-latestVersion.textContent = jsonObj[0].version;
-latestDate.textContent = jsonObj[0].releaseDate;
-latestSize.textContent = jsonObj[0].size;
-latestOS.textContent = jsonObj[0].OS;
-if (jsonObj[0].OS == "Windows7+")
+console.log(latestInfo.version);
+console.log(latestInfo.OS)
+
+latestVersion.textContent = latestInfo.version;
+latestDate.textContent = latestInfo.releaseDate;
+latestSize.textContent = latestInfo.size;
+latestOS.textContent = latestInfo.OS;
+if (latestInfo.OS == "Windows7+")
 {
   var winIconElement = document.createElement('i');
   winIconElement.className = "fab fa-windows";
   winIconElement.style.cssText = "margin-right: .5em";
   latestOS.prepend(winIconElement);
 }
-latestOSVersion.textContent = jsonObj[0].OSVersion;
-latestDownload.href = jsonObj[0].link;
+latestOSVersion.textContent = latestInfo.OSVersion;
+latestDownload.href = latestInfo.link;
+latestDownload.target = "_blank";
+latestDownload.rel = "noopener noreferrer";
 
-var oldVersionList = jsonObj.splice(1, jsonObj.length - 1);
+var oldVersionList = jsonObj.splice(0, jsonObj.length - 1);
 
 console.log(oldVersionList);
 
@@ -113,6 +117,9 @@ oldVersionList.forEach(i => {
     var body_install_Button = document.createElement('a');
       body_install_Button.className = "old-download-button old-download-button-border";
       body_install_Button.textContent = "Download";
+      body_install_Button.href = i.link;
+      body_install_Button.target = "_blank";
+      body_install_Button.rel = "noopener noreferrer";
       var body_install_Button_i = document.createElement('i');
         body_install_Button_i.className = "link-color-none fas fa-download";
         body_install_Button_i.style.cssText = "margin-left: .5em;"
