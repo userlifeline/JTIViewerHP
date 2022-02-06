@@ -42,11 +42,6 @@ console.log(oldVersionList);
 var image_style = "margin-right: .2em;";
 
 oldVersionList.forEach(i => {
-  var version = i.Version;
-  var releaseDate = i.releaseDate;
-  var size = i.size;
-  var OS = i.OS;
-  var OSVersion = i.OSVersion;
 
   var headerElements = document.createElement('tr');
     var header_version = document.createElement('th');
@@ -114,7 +109,7 @@ oldVersionList.forEach(i => {
       }
     var body_OSVersion = document.createElement('td');
       body_OSVersion.className = "content";
-      body_OSVersion.textContent = OSVersion;
+      body_OSVersion.textContent = i.OSVersion;
     var body_install_Button = document.createElement('a');
       body_install_Button.className = "old-download-button old-download-button-border";
       body_install_Button.textContent = "Download";
