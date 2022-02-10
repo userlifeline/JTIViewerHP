@@ -629,3 +629,22 @@ details.p.detail-text {
     content: '\f067';
     margin-right: .5rem;
 }
+
+.language-pack {
+    border: 5px #202020 double;
+    padding: 0;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.pack-item {
+    border: 2px #1d1d1d solid;
+    color: #999999;
+    padding: .2em .5em .2em .5em;
+    text-align: center;
+}
+
+.item-left {
+    padding-left: .5em;
+    text-align: left;
+}

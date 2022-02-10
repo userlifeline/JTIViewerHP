@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="https://userlifeline.github.io/JTIViewerHP/style.css" rel="stylesheet" type="text/css" media="all">
+        <link href="images/icon/icon.png" rel="shortcut icon">
+        <link href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet"><!--アイコン表示のあれ-->
+
+        <!--prefixの設定-->
+        <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#"></head> <!--Twitterとかで拡散されたときに使えるらしい-->
+        <!--THE END-->
+
+        <meta property="og:url" content="https://userlifeline.github.io/JTIViewerHP/index.html">
+        <meta property="og:type" content="article">
+        <meta property="og:title" content="JTIViewer">
+        <meta property="og:description" content="Windows上で津波情報を表示するアプリケーション、JTIViewer。">
+        <meta property="og:site_name" content="JTIViewer">
+        <meta property="ob:image" content="https://userlifeline.github.io/JTIViewerHP/images/icon/icon.png">
+        <meta property="twitter:image" content="https://userlifeline.github.io/JTIViewerHP/images/icon/icon.png">
+        <meta property="twitter:card" content="summary">
+        <meta property="twitter:site" content="@userlifeline">
+
+        <title>JTIViewer | 言語パック</title>
+    </head>
+    <body class="back">
+        <header>
+            <div class="left">
+                <a href="index.html"><img class="icon-image" src="images/icon/icon.png"></a>
+            </div>
+            <nav class="right">
+                <ul>
+                    <li><a href="index.html" class="menu-content"><i class="fas fa-home" style="margin-right: .2em;"></i>ホーム</a></li>
+                    <li><a href="details.html" class="menu-content"><i class="fas fa-info-circle" style="margin-right: .2em;"></i>詳細</a></li>
+                    <li><a href="download.html" class="menu-content"><i class="fas fa-download" style="margin-right: .2em;"></i>ダウンロード</a></li>
+                    <li><a href="qa.html" class="menu-content"><i class="fab fa-teamspeak" style="margin-right: .2em;"></i>Q&A</a></li>
+                    <li><a href="misc.html" class="menu-content"><i class="fas fa-ellipsis-v" style="margin-right: .2em;"></i>その他</a></li>
+                    <li style="margin-left: 3rem;"></li>
+                    <li><a href="https://twitter.com/userlifeline" target="_blank" rel="noopener noreferrer" class="menu-content"><i class="fab fa-twitter menu-sns-icon" style="padding-left: .5em;"></i></a></li>
+                    <li><a href="https://discord.gg/EEvB7YquPx" target="_blank" rel="noopener noreferrer" class="menu-content"><i class="fab fa-discord menu-sns-icon" style="padding-left: .5em;"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div style="position: relative; top: 100px;">
+            <div class="content">
+                <section>
+                    <p class="detail-title">ファイル名</p>
+                    <hr>
+                    <p class="detail-text">本体に言語パックとして認識してもらう方法としてファイル名を利用しています。<br>開発する際は、<split class="filename">package.</split>からファイル名を始めてください。</p>
+                    <p class="detail-text">拡張子は<split class="filename">.xml</split>です。</p>
+                </section>
+                <section>
+                    <p class="detail-title">内部構成</p>
+                    <hr>
+                    <p class="detail-text">言語パックの内部構成は以下の通りです。</p>
+                    <table class="language-pack">
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="99">Package</td>
+                            <td class="pack-item item-left" colspan="6">言語パックの外側</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="2">Comment</td>
+                            <td class="pack-item item-left" colspan="5">言語パックについての説明</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Language</td>
+                            <td class="pack-item item-left" colspan="4">言語パックが登録している言語</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="7">Title</td>
+                            <td class="pack-item item-left" colspan="5">表示画面に表示するタイトル</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="3">VSTE41</td>
+                            <td class="pack-item item-left" colspan="4">津波発表に関する情報のタイトル</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Text</td>
+                            <td class="pack-item item-left" colspan="3">文字列</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Size</td>
+                            <td class="pack-item item-left" colspan="3">フォントの大きさ</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="3">VSTE51</td>
+                            <td class="pack-item item-left" colspan="4">津波観測に関する情報のタイトル</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Text</td>
+                            <td class="pack-item item-left" colspan="3">文字列</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Size</td>
+                            <td class="pack-item item-left" colspan="3">フォントの大きさ</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="19">Flag</td>
+                            <td class="pack-item item-left" colspan="5">発表されている津波情報</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="3">MajorWarning</td>
+                            <td class="pack-item item-left" colspan="4">大津波警報</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Text</td>
+                            <td class="pack-item item-left" colspan="3">文字列</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Size</td>
+                            <td class="pack-item item-left" colspan="3">フォントの大きさ</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="3">Warning</td>
+                            <td class="pack-item item-left" colspan="4">津波警報</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Text</td>
+                            <td class="pack-item item-left" colspan="3">文字列</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Size</td>
+                            <td class="pack-item item-left" colspan="3">フォントの大きさ</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="3">Watch</td>
+                            <td class="pack-item item-left" colspan="4">津波注意報</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Text</td>
+                            <td class="pack-item item-left" colspan="3">文字列</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Size</td>
+                            <td class="pack-item item-left" colspan="3">フォントの大きさ</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="3">Forecast</td>
+                            <td class="pack-item item-left" colspan="4">津波予報</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Text</td>
+                            <td class="pack-item item-left" colspan="3">文字列</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Size</td>
+                            <td class="pack-item item-left" colspan="3">フォントの大きさ</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="3">WarningCancel</td>
+                            <td class="pack-item item-left" colspan="4">津波警報解除</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Text</td>
+                            <td class="pack-item item-left" colspan="3">文字列</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Size</td>
+                            <td class="pack-item item-left" colspan="3">フォントの大きさ</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="3">WatchCancel</td>
+                            <td class="pack-item item-left" colspan="4">津波注意報解除</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Text</td>
+                            <td class="pack-item item-left" colspan="3">文字列</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Size</td>
+                            <td class="pack-item item-left" colspan="3">フォントの大きさ</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="5">Points</td>
+                            <td class="pack-item item-left" colspan="5">津波予報区</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="4">Area</td>
+                            <td class="pack-item item-left" colspan="4">予報区</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Text</td>
+                            <td class="pack-item item-left" colspan="3">文字列</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Code</td>
+                            <td class="pack-item item-left" colspan="3">予報区コード</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Size</td>
+                            <td class="pack-item item-left" colspan="3">フォントの大きさ</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="15">Height</td>
+                            <td class="pack-item item-left" colspan="5">予想される高さ</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="7">Expression</td>
+                            <td class="pack-item item-left" colspan="4">大雑把な表現</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="3">High</td>
+                            <td class="pack-item item-left" colspan="3">「高い」表示</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Text</td>
+                            <td class="pack-item item-left" colspan="2">文字列</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Size</td>
+                            <td class="pack-item item-left" colspan="2">フォントの大きさ</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="3">Huge</td>
+                            <td class="pack-item item-left" colspan="3">「巨大」表示</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Text</td>
+                            <td class="pack-item item-left" colspan="2">文字列</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Size</td>
+                            <td class="pack-item item-left" colspan="2">フォントの大きさ</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="7">Numeric</td>
+                            <td class="pack-item item-left" colspan="4">数字を用いた表現</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="3">O10M</td>
+                            <td class="pack-item item-left" colspan="3">「10m超え」表示</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Text</td>
+                            <td class="pack-item item-left" colspan="2">文字列</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Size</td>
+                            <td class="pack-item item-left" colspan="2">フォントの大きさ</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="3">U0.2M</td>
+                            <td class="pack-item item-left" colspan="3">「0.2m未満」表示</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Text</td>
+                            <td class="pack-item item-left" colspan="2">文字列</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Size</td>
+                            <td class="pack-item item-left" colspan="2">フォントの大きさ</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="15">Time</td>
+                            <td class="pack-item item-left" colspan="5">予想時刻・到達状況</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="3">Soon</td>
+                            <td class="pack-item item-left" colspan="4">「すぐに来る」表示</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Text</td>
+                            <td class="pack-item item-left" colspan="3">文字列</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Size</td>
+                            <td class="pack-item item-left" colspan="3">フォントの大きさ</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="3">Reaching</td>
+                            <td class="pack-item item-left" colspan="4">「到達中」表示</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Text</td>
+                            <td class="pack-item item-left" colspan="3">文字列</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Size</td>
+                            <td class="pack-item item-left" colspan="3">フォントの大きさ</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="3">Reached</td>
+                            <td class="pack-item item-left" colspan="4">「到達済み」表示</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Text</td>
+                            <td class="pack-item item-left" colspan="3">文字列</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Size</td>
+                            <td class="pack-item item-left" colspan="3">フォントの大きさ</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="4">Numeric</td>
+                            <td class="pack-item item-left" colspan="4">「第N波」表示</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="3">Reached</td>
+                            <td class="pack-item item-left" colspan="3">「到達済み」表示</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Text</td>
+                            <td class="pack-item item-left" colspan="2">文字列 <split class="caution"><split class="filename">{Num}</split>を入れることで波の数字のみを、<split class="filename">{NumEm}</split>を入れることで<split class="filename">1st, 2nd, 3rd</split>のような表記を追加できます。</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Size</td>
+                            <td class="pack-item item-left" colspan="2">フォントの大きさ</td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="4">Time</td>
+                            <td class="pack-item item-left" colspan="4">津波観測情報の時刻表示 <split class="caution"><split class="filename">HH</split>は2桁24時間表記の「時」、<split class="filename">hh</split>は2桁12時間表記の「時」、<split class="filename">HH</split>は1桁24時間表記の「時」、<split class="filename">h</split>は1桁12時間表記の「時」、<split class="filename">mm</split>は2桁表記の「分」、<split class="filename">m</split>は1桁表記の「分」をそれぞれ示します。</td>
+                        </tr>
+                    </table>
+                </section>
+                <section>
+                    <p class="detail-title">注意事項</p>
+                    <hr>
+                    <ul>
+                        <li class="detail-text">構成は予告なく変更する場合があります。</li>
+                        <li class="detail-text">エンコード形式は<split class="filename">UTF-8</split>です。</li>
+                        <li class="detail-text"><split class="filename">{Num}, {NumEm}</split>については、文字の大文字小文字も違わず記載してください。</li>
+                    </ul>
+                </section>
+                <section>
+                    <p class="detail-title">ひな型のダウンロード</p>
+                    <p class="detail-text"><a href=".\files\package.language.xml" download target="_blank" rel="noopener noreferrer" class="link-color-none">[2022-02バージョン(package.language.xml): 6KB]<i class="fa-solid fa-file-code"></i></a></p>
+                </section>
+            </div>
+
+            <div class="footer">
+                <p>2022 userlifeline, JTIViewer</p>
+                <hr>
+                <p>Created by userlifeline</p>
+                <p>開発者の許可を得ていない状態かつ引用目的以外でのこのホームページにあるすべてのコンテンツの利用、改変およびそれに付随する行為を一切禁止します。</p>
+                <p>All content on this page without the permission of the developer and for purposes other than citation is prohibited.</p>
+                <p>Copyright 2022 userlifeline, ALL RIGHTS RESERVED</p>
+            </div>
+        </div>
+    </body>
+</html>
