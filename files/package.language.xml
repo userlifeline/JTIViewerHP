@@ -102,4 +102,7 @@
         </Numeric>
         <Time></Time>
     </Time>
+    <Message>
+        <NoTsunamiWarning><Text></Text><Size></Size></NoTsunamiWarning>
+    </Message>
 </Package>
