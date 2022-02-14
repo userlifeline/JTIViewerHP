@@ -21,7 +21,7 @@
         <meta property="twitter:card" content="summary">
         <meta property="twitter:site" content="@userlifeline">
 
-        <title>JTIViewer | 言語パック</title>
+        <title>JTIViewer | 拡張パック</title>
     </head>
     <body class="back">
         <header>
@@ -47,17 +47,42 @@
                 <section>
                     <p class="detail-title">ファイル名</p>
                     <hr>
-                    <p class="detail-text">本体に言語パックとして認識してもらう方法としてファイル名を利用しています。<br>開発する際は、<split class="filename">package.</split>からファイル名を始めてください。</p>
-                    <p class="detail-text">拡張子は<split class="filename">.xml</split>です。</p>
+                    <div style="width: 90%; margin-left: auto; margin-right: auto;">
+                        <span>
+                            <p class="section-title">言語パック</p>
+                            <hr>
+                            <p class="detail-text">本体に言語パックとして認識してもらう方法としてファイル名を利用しています。<br>開発する際は、<split class="filename">package.</split>からファイル名を始めてください。</p>
+                            <p class="detail-text">拡張子は<split class="filename">.xml</split>です。</p>
+                        </span>
+                        <span>
+                            <p class="section-title">辞書パック</p>
+                            <hr>
+                            <p class="detail-text">棒読みちゃんに津波情報を送信する際、津波予報区名を送信する方法として辞書パックを利用しています。<br>開発する際は、<split class="filename">yomiage.dictionary.xml</split>として作成してください。</p>
+                            <p class="detail-text">拡張子は<split class="filename">.xml</split>です。</p>
+                        </span>
+                    </div>
                 </section>
                 <section>
                     <p class="detail-title">内部構成</p>
                     <hr>
-                    <p class="detail-text">言語パックの内部構成は以下の通りです。</p>
+                    <p class="detail-text">拡張パックの内部構成は以下の通りです。</p>
+                    <p class="section-title">注意</p>
+                    <ul>
+                        <li class="detail-text">辞書パックの場合、<split class="filename">Points</split>のみで構成され、<split class="filename">Size</split>タグは存在しません。</li>
+                    </ul>
+                    <p class="section-title"><split class="filename">HEAD</split>タグ名について</p>
+                    <p class="detail-text">各パッケージを作成する際は、<split class="filename">HEAD</split>の部分を以下のものに変更してください。</p>
+                    <ul>
+                        <li class="detail-text">言語パック: <split class="filename">Package</split></li>
+                        <li class="detail-text">辞書パック: <split class="filename">YomiageDictionary</split></li>
+                    </ul>
+                    <ul>
+
+                    </ul>
                     <table class="language-pack">
                         <tr class="pack-item">
-                            <td class="pack-item" rowspan="99">Package</td>
-                            <td class="pack-item item-left" colspan="6">言語パックの外側</td>
+                            <td class="pack-item filename" rowspan="99">HEAD</td>
+                            <td class="pack-item item-left" colspan="6">言語パックの外側 <split class="caution">タグ名を上にしたがって変更してください。</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="2">Comment</td>
@@ -324,7 +349,10 @@
                 </section>
                 <section>
                     <p class="detail-title">ひな型のダウンロード</p>
-                    <p class="detail-text"><a href=".\files\package.language.xml" download target="_blank" rel="noopener noreferrer" class="link-color-none">[2022-02バージョン(package.language.xml): 6KB]<i class="fa-solid fa-file-code"></i></a></p>
+                    <ul>
+                        <li class="detail-text"><a href=".\files\package.language.xml" download target="_blank" rel="noopener noreferrer" class="link-color-none">[2022-02バージョン(package.language.xml): 6KB]<i class="fa-solid fa-file-code"></i></a></li>
+                        <li class="detail-text"><a href=".\files\yomiage.dictionary.xml" download target="_blank" rel="noopener noreferrer" class="link-color-none">[2022-02バージョン(yomiage.dictionary.xml): 5KB]<i class="fa-solid fa-file-code"></i></a></li>
+                    </ul>
                 </section>
             </div>
 
