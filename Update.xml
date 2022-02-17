@@ -2,8 +2,8 @@
 <Update>
     <LatestVersion><Content>0.0.0 alpha2</Content><URL>https://userlifeline.github.io/JTIViewerHP/application/TEMP.exe</URL></LatestVersion>
     <OldVersion>
-        <Version>0.0.0 alpha0</Version>
-        <Version>0.0.0 alpha1</Version>
+        <Version><Content>0.0.0 alpha0</Content><URL>https://userlifeline.github.io/JTIViewerHP/application/TEMP.exe</URL></Version>
+        <Version><Content>0.0.0 alpha1</Content><URL>https://userlifeline.github.io/JTIViewerHP/application/TEMP.exe</URL></Version>
     </OldVersion>
     <UpdateDateTime>2021/02/13</UpdateDateTime>
     <UpdateAdd>
