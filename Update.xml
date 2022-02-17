@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Update>
+    <LatestVersion>0.0.0 alpha2</LatestVersion>
+    <OldVersion>
+        <Version>0.0.0 alpha0</Version>
+        <Version>0.0.0 alpha1</Version>
+    </OldVersion>
+    <UpdateDateTime>2021/02/13</UpdateDateTime>
+    <UpdateAdd>
+        <Content>棒読みちゃんの読み上げ地点名を辞書機能で代用する機能を追加</Content>
+        <Content>アップデーターを追加</Content>
+    </UpdateAdd>
+    <UpdateChange>
+        <Content>電文情報の文字色を変更</Content>
+    </UpdateChange>
+    <UpdateMessage></UpdateMessage>
+</Update>
