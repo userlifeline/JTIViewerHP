@@ -1,9 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Update.LatestVersion.Attachment.File.Content
+        パッケージ名と同じものにすること
+
+    Update.IsFolder
+        フォルダかどうか
+
+    Update.LatestVersion.Attachment.File.Mode
+        attachment : 実行ファイルと同層
+        lib : .\lib\ファイル
+    
+    # フォルダを追加する時はIsFolderをtrueにしてContentをフォルダの相対パス("directory\package.dll"的な感じ)から始めていい感じにアップロード
+-->
+
 <Update>
-    <LatestVersion><Content>0.0.0 alpha2</Content><URL>https://userlifeline.github.io/JTIViewerHP/application/TEMP_0.0.0_alpha2.exe</URL></LatestVersion>
+    <LatestVersion>
+        <Content>0.0.0 alpha2</Content>
+        <URL>https://userlifeline.github.io/JTIViewerHP/application/TEMP_0.0.0_alpha2.exe</URL>
+        <Attachment>
+            <File>
+                <Content>TestPackage1.dll</Content>
+                <IsFolder>false</IsFolder>
+                <Mode>lib</Mode>
+                <URL>https://userlifeline.github.io/JTIViewerHP/application/TEMP_0.0.0_alpha2/TestPackage1.dll</URL>
+            </File>
+            <File>
+                <Content>TestPackage2.dll</Content>
+                <IsFolder>false</IsFolder>
+                <Mode>lib</Mode>
+                <URL>https://userlifeline.github.io/JTIViewerHP/application/TEMP_0.0.0_alpha2/TestPackage2.dll</URL>
+            </File>
+        </Attachment>
+    </LatestVersion>
     <OldVersion>
-        <Version><Content>0.0.0 alpha0</Content><URL>https://userlifeline.github.io/JTIViewerHP/application/TEMP_0.0.0_alpha0.exe</URL></Version>
-        <Version><Content>0.0.0 alpha1</Content><URL>https://userlifeline.github.io/JTIViewerHP/application/TEMP_0.0.0_alpha1.exe</URL></Version>
+        <Version>
+            <Content>0.0.0 alpha0</Content>
+            <URL>https://userlifeline.github.io/JTIViewerHP/application/TEMP_0.0.0_alpha0.exe</URL>
+            <Attachment>
+                <File>
+                    <Content>TestPackage1.dll</Content>
+                    <IsFolder>false</IsFolder>
+                    <Mode>lib</Mode>
+                    <URL>https://userlifeline.github.io/JTIViewerHP/application/TEMP_0.0.0_alpha0/TestPackage1.dll</URL>
+                </File>
+                <File>
+                    <Content>TestPackage2.dll</Content>
+                    <IsFolder>false</IsFolder>
+                    <Mode>lib</Mode>
+                    <URL>https://userlifeline.github.io/JTIViewerHP/application/TEMP_0.0.0_alpha0/TestPackage2.dll</URL>
+                </File>
+            </Attachment>
+        </Version>
+        <Version>
+            <Content>0.0.0 alpha1</Content>
+            <URL>https://userlifeline.github.io/JTIViewerHP/application/TEMP_0.0.0_alpha1.exe</URL>
+            <Attachment>
+                <File>
+                    <Content>TestPackage1.dll</Content>
+                    <IsFolder>false</IsFolder>
+                    <Mode>lib</Mode>
+                    <URL>https://userlifeline.github.io/JTIViewerHP/application/TEMP_0.0.0_alpha1/TestPackage1.dll</URL>
+                </File>
+                <File>
+                    <Content>TestPackage2.dll</Content>
+                    <IsFolder>false</IsFolder>
+                    <Mode>lib</Mode>
+                    <URL>https://userlifeline.github.io/JTIViewerHP/application/TEMP_0.0.0_alpha1/TestPackage2.dll</URL>
+                </File>
+            </Attachment>
+        </Version>
     </OldVersion>
     <UpdateDateTime>2021/02/13</UpdateDateTime>
     <UpdateAdd>
