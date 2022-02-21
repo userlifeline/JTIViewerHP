@@ -44,297 +44,424 @@
 
         <div style="position: relative; top: 100px;">
             <div class="content">
-                <section>
-                    <p class="detail-title">ファイル名</p>
-                    <hr>
-                    <div style="width: 90%; margin-left: auto; margin-right: auto;">
-                        <span>
-                            <p class="section-title">言語パック</p>
-                            <hr>
-                            <p class="detail-text">本体に言語パックとして認識してもらう方法としてファイル名を利用しています。<br>開発する際は、<split class="filename">package.</split>からファイル名を始めてください。</p>
-                            <p class="detail-text">拡張子は<split class="filename">.xml</split>です。</p>
-                        </span>
-                        <span>
-                            <p class="section-title">辞書パック</p>
-                            <hr>
-                            <p class="detail-text">棒読みちゃんに津波情報を送信する際、津波予報区名を送信する方法として辞書パックを利用しています。<br>開発する際は、<split class="filename">yomiage.dictionary.xml</split>として作成してください。</p>
-                            <p class="detail-text">拡張子は<split class="filename">.xml</split>です。</p>
-                        </span>
-                    </div>
-                </section>
+                <p class="warning">このページの情報は現在編集しています。<br>情報は随時更新されますのでご注意ください。</p>
                 <section>
                     <p class="detail-title">内部構成</p>
                     <hr>
-                    <p class="detail-text">拡張パックの内部構成は以下の通りです。</p>
-                    <p class="section-title">注意</p>
-                    <ul>
-                        <li class="detail-text">辞書パックの場合、<split class="filename">Points</split>のみで構成され、<split class="filename">Size</split>タグは存在しません。</li>
-                    </ul>
-                    <p class="section-title"><split class="filename">HEAD</split>タグ名について</p>
-                    <p class="detail-text">各パッケージを作成する際は、<split class="filename">HEAD</split>の部分を以下のものに変更してください。</p>
-                    <ul>
-                        <li class="detail-text">言語パック: <split class="filename">Package</split></li>
-                        <li class="detail-text">辞書パック: <split class="filename">YomiageDictionary</split></li>
-                    </ul>
-                    <ul>
-
-                    </ul>
+                    <ol>
+                        <li class="detail-text"><a href="#language-pack" class="link-color-none">言語パック</a></li>
+                        <li class="detail-text"><a href="#dictionary-pack" class="link-color-none">辞書パック</a></li>
+                    </ol>
+                </section>
+                <section id="language-pack" style="width: 95%; margin-left: auto; margin-right: auto;">
+                    <h3 class="section-title">言語パック</h3>
+                    <hr>
                     <table class="language-pack">
                         <tr class="pack-item">
-                            <td class="pack-item filename" rowspan="99">HEAD</td>
-                            <td class="pack-item item-left" colspan="6">言語パックの外側 <split class="caution">タグ名を上にしたがって変更してください。</split></td>
+                            <td class="pack-item" rowspan="99">Package</td>
+                            <td class="pack-item item-left" colspan="6">言語パックの外側 <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="2">Comment</td>
-                            <td class="pack-item item-left" colspan="5">言語パックについての説明</td>
+                            <td class="pack-item item-left" colspan="5">言語パックについての説明 <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="1">Language</td>
-                            <td class="pack-item item-left" colspan="4">言語パックが登録している言語</td>
+                            <td class="pack-item item-left" colspan="4">言語パックが登録している言語 <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="7">Title</td>
-                            <td class="pack-item item-left" colspan="5">表示画面に表示するタイトル</td>
+                            <td class="pack-item item-left" colspan="5">表示画面に表示するタイトル <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="3">VSTE41</td>
-                            <td class="pack-item item-left" colspan="4">津波発表に関する情報のタイトル</td>
+                            <td class="pack-item item-left" colspan="4">津波発表に関する情報のタイトル <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="1">Text</td>
-                            <td class="pack-item item-left" colspan="3">文字列</td>
+                            <td class="pack-item item-left" colspan="3">文字列 <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="1">Size</td>
-                            <td class="pack-item item-left" colspan="3">フォントの大きさ</td>
+                            <td class="pack-item item-left" colspan="3">フォントの大きさ <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="3">VSTE51</td>
-                            <td class="pack-item item-left" colspan="4">津波観測に関する情報のタイトル</td>
+                            <td class="pack-item item-left" colspan="4">津波観測に関する情報のタイトル <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="1">Text</td>
-                            <td class="pack-item item-left" colspan="3">文字列</td>
+                            <td class="pack-item item-left" colspan="3">文字列 <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="1">Size</td>
-                            <td class="pack-item item-left" colspan="3">フォントの大きさ</td>
+                            <td class="pack-item item-left" colspan="3">フォントの大きさ <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="19">Flag</td>
-                            <td class="pack-item item-left" colspan="5">発表されている津波情報</td>
+                            <td class="pack-item item-left" colspan="5">発表されている津波情報 <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="3">MajorWarning</td>
-                            <td class="pack-item item-left" colspan="4">大津波警報</td>
+                            <td class="pack-item item-left" colspan="4">大津波警報 <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="1">Text</td>
-                            <td class="pack-item item-left" colspan="3">文字列</td>
+                            <td class="pack-item item-left" colspan="3">文字列 <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="1">Size</td>
-                            <td class="pack-item item-left" colspan="3">フォントの大きさ</td>
+                            <td class="pack-item item-left" colspan="3">フォントの大きさ <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="3">Warning</td>
-                            <td class="pack-item item-left" colspan="4">津波警報</td>
+                            <td class="pack-item item-left" colspan="4">津波警報 <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="1">Text</td>
-                            <td class="pack-item item-left" colspan="3">文字列</td>
+                            <td class="pack-item item-left" colspan="3">文字列 <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="1">Size</td>
-                            <td class="pack-item item-left" colspan="3">フォントの大きさ</td>
+                            <td class="pack-item item-left" colspan="3">フォントの大きさ <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="3">Watch</td>
-                            <td class="pack-item item-left" colspan="4">津波注意報</td>
+                            <td class="pack-item item-left" colspan="4">津波注意報 <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="1">Text</td>
-                            <td class="pack-item item-left" colspan="3">文字列</td>
+                            <td class="pack-item item-left" colspan="3">文字列 <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="1">Size</td>
-                            <td class="pack-item item-left" colspan="3">フォントの大きさ</td>
+                            <td class="pack-item item-left" colspan="3">フォントの大きさ <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="3">Forecast</td>
-                            <td class="pack-item item-left" colspan="4">津波予報</td>
+                            <td class="pack-item item-left" colspan="4">津波予報 <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="1">Text</td>
-                            <td class="pack-item item-left" colspan="3">文字列</td>
+                            <td class="pack-item item-left" colspan="3">文字列 <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="1">Size</td>
-                            <td class="pack-item item-left" colspan="3">フォントの大きさ</td>
+                            <td class="pack-item item-left" colspan="3">フォントの大きさ <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="3">WarningCancel</td>
-                            <td class="pack-item item-left" colspan="4">津波警報解除</td>
+                            <td class="pack-item item-left" colspan="4">津波警報解除 <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="1">Text</td>
-                            <td class="pack-item item-left" colspan="3">文字列</td>
+                            <td class="pack-item item-left" colspan="3">文字列 <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="1">Size</td>
-                            <td class="pack-item item-left" colspan="3">フォントの大きさ</td>
+                            <td class="pack-item item-left" colspan="3">フォントの大きさ <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="3">WatchCancel</td>
-                            <td class="pack-item item-left" colspan="4">津波注意報解除</td>
+                            <td class="pack-item item-left" colspan="4">津波注意報解除 <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="1">Text</td>
-                            <td class="pack-item item-left" colspan="3">文字列</td>
+                            <td class="pack-item item-left" colspan="3">文字列 <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="1">Size</td>
-                            <td class="pack-item item-left" colspan="3">フォントの大きさ</td>
+                            <td class="pack-item item-left" colspan="3">フォントの大きさ <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
-                            <td class="pack-item" rowspan="5">Points</td>
-                            <td class="pack-item item-left" colspan="5">津波予報区</td>
+                            <td class="pack-item" rowspan="16">Points</td>
+                            <td class="pack-item item-left" colspan="5">各情報での区間、地点名 <split class="caution">[出現回数: 1]</split></td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="5">VTSE41</td>
+                            <td class="pack-item item-left" colspan="4">VTSE41の地点名一覧 <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="4">Area</td>
-                            <td class="pack-item item-left" colspan="4">予報区</td>
+                            <td class="pack-item item-left" colspan="3">予報区 <split class="caution">[出現回数: 66]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="1">Text</td>
-                            <td class="pack-item item-left" colspan="3">文字列</td>
+                            <td class="pack-item item-left" colspan="2">文字列 <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="1">Code</td>
-                            <td class="pack-item item-left" colspan="3">予報区コード</td>
+                            <td class="pack-item item-left" colspan="2">予報区コード <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="1">Size</td>
-                            <td class="pack-item item-left" colspan="3">フォントの大きさ</td>
+                            <td class="pack-item item-left" colspan="2">フォントの大きさ <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
-                            <td class="pack-item" rowspan="15">Height</td>
-                            <td class="pack-item item-left" colspan="5">予想される高さ</td>
+                            <td class="pack-item" rowspan="5">VTSE5X</td>
+                            <td class="pack-item item-left" colspan="4">VTSE5Xの地点名一覧 <split class="caution">[出現回数: 554]</split></td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="4">Area</td>
+                            <td class="pack-item item-left" colspan="3">観測点 <split class="caution">[出現回数: 1]</split></td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Text</td>
+                            <td class="pack-item item-left" colspan="2">文字列 <split class="caution">[出現回数: 1]</split></td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Code</td>
+                            <td class="pack-item item-left" colspan="2">観測点コード <split class="caution">[出現回数: 1]</split></td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Size</td>
+                            <td class="pack-item item-left" colspan="2">フォントの大きさ <split class="caution">[出現回数: 1]</split></td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="5">Region</td>
+                            <td class="pack-item item-left" colspan="4">地震震央名一覧 <split class="caution">[出現回数: 343]</split></td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="4">Area</td>
+                            <td class="pack-item item-left" colspan="3">予報区 <split class="caution">[出現回数: 1]</split></td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Text</td>
+                            <td class="pack-item item-left" colspan="2">文字列 <split class="caution">[出現回数: 1]</split></td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Code</td>
+                            <td class="pack-item item-left" colspan="2">予報区コード <split class="caution">[出現回数: 1]</split></td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Size</td>
+                            <td class="pack-item item-left" colspan="2">フォントの大きさ <split class="caution">[出現回数: 1]</split></td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="20">Height</td>
+                            <td class="pack-item item-left" colspan="5">予想される高さ <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="7">Expression</td>
-                            <td class="pack-item item-left" colspan="4">大雑把な表現</td>
+                            <td class="pack-item item-left" colspan="4">大雑把な表現 <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="3">High</td>
-                            <td class="pack-item item-left" colspan="3">「高い」表示</td>
+                            <td class="pack-item item-left" colspan="3">「高い」表示 <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="1">Text</td>
-                            <td class="pack-item item-left" colspan="2">文字列</td>
+                            <td class="pack-item item-left" colspan="2">文字列 <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="1">Size</td>
-                            <td class="pack-item item-left" colspan="2">フォントの大きさ</td>
+                            <td class="pack-item item-left" colspan="2">フォントの大きさ <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="3">Huge</td>
-                            <td class="pack-item item-left" colspan="3">「巨大」表示</td>
+                            <td class="pack-item item-left" colspan="3">「巨大」表示 <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="1">Text</td>
-                            <td class="pack-item item-left" colspan="2">文字列</td>
+                            <td class="pack-item item-left" colspan="2">文字列 <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="1">Size</td>
-                            <td class="pack-item item-left" colspan="2">フォントの大きさ</td>
+                            <td class="pack-item item-left" colspan="2">フォントの大きさ <split class="caution">[出現回数: 1]</split></td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Mode</td>
+                            <td class="pack-item item-left" colspan="4">
+                                <split class="filename">Word.Under</split>、<split class="filename">Word.Over</split>の表記方法 <split class="caution">[出現回数: 1]</split>
+                                <ul>
+                                    <li><split class="filename">EN</split>: <split class="filename">Over 2.8m</split>のように【符号 + 高さ】の表記になるもの</li>
+                                    <li><split class="filename">JP</split>: <split class="filename">2.8m以上</split>のように【高さ + 符号】の表記になるもの</li>
+                                </ul>
+                            </td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="7">Numeric</td>
-                            <td class="pack-item item-left" colspan="4">数字を用いた表現</td>
+                            <td class="pack-item item-left" colspan="4">数字を用いた表現 <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="3">O10M</td>
-                            <td class="pack-item item-left" colspan="3">「10m超え」表示</td>
+                            <td class="pack-item item-left" colspan="3">「10m超え」表示 <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="1">Text</td>
-                            <td class="pack-item item-left" colspan="2">文字列</td>
+                            <td class="pack-item item-left" colspan="2">文字列 <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="1">Size</td>
-                            <td class="pack-item item-left" colspan="2">フォントの大きさ</td>
+                            <td class="pack-item item-left" colspan="2">フォントの大きさ <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="3">U0.2M</td>
-                            <td class="pack-item item-left" colspan="3">「0.2m未満」表示</td>
+                            <td class="pack-item item-left" colspan="3">「0.2m未満」表示 <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="1">Text</td>
-                            <td class="pack-item item-left" colspan="2">文字列</td>
+                            <td class="pack-item item-left" colspan="2">文字列 <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="1">Size</td>
-                            <td class="pack-item item-left" colspan="2">フォントの大きさ</td>
+                            <td class="pack-item item-left" colspan="2">フォントの大きさ <split class="caution">[出現回数: 1]</split></td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="4">Status</td>
+                            <td class="pack-item item-left" colspan="4">文字列を用いた状態表示 <split class="caution">[出現回数: 1]</split></td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="3">Observing</td>
+                            <td class="pack-item item-left" colspan="3">「観測中」表示 <split class="caution">[出現回数: 1]</split></td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Text</td>
+                            <td class="pack-item item-left" colspan="2">文字列 <split class="caution">[出現回数: 1]</split></td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Size</td>
+                            <td class="pack-item item-left" colspan="2">フォントの大きさ <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="15">Time</td>
-                            <td class="pack-item item-left" colspan="5">予想時刻・到達状況</td>
+                            <td class="pack-item item-left" colspan="5">予想時刻・到達状況 <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="3">Soon</td>
-                            <td class="pack-item item-left" colspan="4">「すぐに来る」表示</td>
+                            <td class="pack-item item-left" colspan="4">「すぐに来る」表示 <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="1">Text</td>
-                            <td class="pack-item item-left" colspan="3">文字列</td>
+                            <td class="pack-item item-left" colspan="3">文字列 <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="1">Size</td>
-                            <td class="pack-item item-left" colspan="3">フォントの大きさ</td>
+                            <td class="pack-item item-left" colspan="3">フォントの大きさ <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="3">Reaching</td>
-                            <td class="pack-item item-left" colspan="4">「到達中」表示</td>
+                            <td class="pack-item item-left" colspan="4">「到達中」表示 <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="1">Text</td>
-                            <td class="pack-item item-left" colspan="3">文字列</td>
+                            <td class="pack-item item-left" colspan="3">文字列 <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="1">Size</td>
-                            <td class="pack-item item-left" colspan="3">フォントの大きさ</td>
+                            <td class="pack-item item-left" colspan="3">フォントの大きさ <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="3">Reached</td>
-                            <td class="pack-item item-left" colspan="4">「到達済み」表示</td>
+                            <td class="pack-item item-left" colspan="4">「到達済み」表示 <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="1">Text</td>
-                            <td class="pack-item item-left" colspan="3">文字列</td>
+                            <td class="pack-item item-left" colspan="3">文字列 <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="1">Size</td>
-                            <td class="pack-item item-left" colspan="3">フォントの大きさ</td>
+                            <td class="pack-item item-left" colspan="3">フォントの大きさ <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="4">Numeric</td>
-                            <td class="pack-item item-left" colspan="4">「第N波」表示</td>
+                            <td class="pack-item item-left" colspan="4">「第N波」表示 <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="3">Reached</td>
-                            <td class="pack-item item-left" colspan="3">「到達済み」表示</td>
+                            <td class="pack-item item-left" colspan="3">「到達済み」表示 <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="1">Text</td>
-                            <td class="pack-item item-left" colspan="2">文字列 <split class="caution"><split class="filename">{Num}</split>を入れることで波の数字のみを、<split class="filename">{NumEm}</split>を入れることで<split class="filename">1st, 2nd, 3rd</split>のような表記を追加できます。</td>
+                            <td class="pack-item item-left" colspan="2">
+                                <p class="detail-text">文字列 <split class="caution">[出現回数: 1]</split></p>
+                                <p class="detail-text"><split class="caution"><split class="filename">{Num}</split>を入れることで波の数字のみを、<split class="filename">{NumEm}</split>を入れることで<split class="filename">1st, 2nd, 3rd</split>のような表記を追加できます。</p>
+                            </td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="1">Size</td>
-                            <td class="pack-item item-left" colspan="2">フォントの大きさ</td>
+                            <td class="pack-item item-left" colspan="2">フォントの大きさ <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                         <tr class="pack-item">
                             <td class="pack-item" rowspan="4">Time</td>
-                            <td class="pack-item item-left" colspan="4">津波観測情報の時刻表示 <split class="caution"><split class="filename">HH</split>は2桁24時間表記の「時」、<split class="filename">hh</split>は2桁12時間表記の「時」、<split class="filename">HH</split>は1桁24時間表記の「時」、<split class="filename">h</split>は1桁12時間表記の「時」、<split class="filename">mm</split>は2桁表記の「分」、<split class="filename">m</split>は1桁表記の「分」をそれぞれ示します。</td>
+                            <td class="pack-item item-left" colspan="4">
+                                <p class="detail-text">津波観測情報の時刻表示<split class="caution">[出現回数: 1]</split></p>
+                                <p class="detail-text"><split class="caution"><split class="filename">HH</split>は2桁24時間表記の「時」、<split class="filename">hh</split>は2桁12時間表記の「時」、<split class="filename">HH</split>は1桁24時間表記の「時」、<split class="filename">h</split>は1桁12時間表記の「時」、<split class="filename">mm</split>は2桁表記の「分」、<split class="filename">m</split>は1桁表記の「分」をそれぞれ示します。</p>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                <section id="dictionary-pack" style="width: 95%; margin-left: auto; margin-right: auto;">
+                    <h3 class="section-title">辞書パック</h3>
+                    <hr>
+                    <table class="language-pack">
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="99">YomiageDictionary</td>
+                            <td class="pack-item item-left" colspan="6">辞書パックの外側 <split class="caution">[出現回数: 1]</split></td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="16">Points</td>
+                            <td class="pack-item item-left" colspan="5">各情報での区間、地点名 <split class="caution">[出現回数: 1]</split></td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="5">VTSE41</td>
+                            <td class="pack-item item-left" colspan="4">VTSE41の地点名一覧 <split class="caution">[出現回数: 66]</split></td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="4">Area</td>
+                            <td class="pack-item item-left" colspan="3">予報区 <split class="caution">[出現回数: 1]</split></td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Text</td>
+                            <td class="pack-item item-left" colspan="2">文字列 <split class="caution">[出現回数: 1]</split></td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Code</td>
+                            <td class="pack-item item-left" colspan="2">予報区コード <split class="caution">[出現回数: 1]</split></td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Size</td>
+                            <td class="pack-item item-left" colspan="2">フォントの大きさ <split class="caution">[出現回数: 1]</split></td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="5">VTSE5X</td>
+                            <td class="pack-item item-left" colspan="4">VTSE5Xの地点名一覧 <split class="caution">[出現回数: 554]</split></td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="4">Area</td>
+                            <td class="pack-item item-left" colspan="3">観測点 <split class="caution">[出現回数: 1]</split></td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Text</td>
+                            <td class="pack-item item-left" colspan="2">文字列 <split class="caution">[出現回数: 1]</split></td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Code</td>
+                            <td class="pack-item item-left" colspan="2">観測点コード <split class="caution">[出現回数: 1]</split></td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Size</td>
+                            <td class="pack-item item-left" colspan="2">フォントの大きさ <split class="caution">[出現回数: 1]</split></td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="5">Region</td>
+                            <td class="pack-item item-left" colspan="4">地震震央名一覧 <split class="caution">[出現回数: 343]</split></td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="4">Area</td>
+                            <td class="pack-item item-left" colspan="3">予報区 <split class="caution">[出現回数: 1]</split></td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Text</td>
+                            <td class="pack-item item-left" colspan="2">文字列 <split class="caution">[出現回数: 1]</split></td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Code</td>
+                            <td class="pack-item item-left" colspan="2">予報区コード <split class="caution">[出現回数: 1]</split></td>
+                        </tr>
+                        <tr class="pack-item">
+                            <td class="pack-item" rowspan="1">Size</td>
+                            <td class="pack-item item-left" colspan="2">フォントの大きさ <split class="caution">[出現回数: 1]</split></td>
                         </tr>
                     </table>
                 </section>
