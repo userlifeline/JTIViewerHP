@@ -656,3 +656,21 @@ details.p.detail-text {
     padding-left: .5em;
     text-align: left;
 }
+
+.tag-color-table {
+    border: 3px #353535 solid;
+    padding: 0;
+    border-collapse: collapse;
+    background-color: #1e1e1e;
+    width: 100%;
+}
+
+.tag-color-table .header{
+    text-align: center;
+    color: #999;
+}
+
+.tag-color-table .tag-content{
+    text-align: center;
+    color: rgb(136, 136, 136);
+}
