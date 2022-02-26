@@ -54,7 +54,7 @@
                         <th class="header" style="font-size: small; text-align: left;"><i class="fas fa-running" style="margin-right: .5em;"></i>.Net</th>
                     </tr>
                     <tr>
-                        <td class="content" style="font-size: large; font-style: bold;"><i class="fab fa-windows" style="margin-right: .5em;"></i>Windows7+ x86 / x64</td>
+                        <td class="content" style="font-size: large; font-style: bold;"><i class="fab fa-windows" style="margin-right: .5em; color: #00AFF0;"></i>Windows7+ x86 / x64</td>
                         <td class="content" style="font-size: large; font-style: bold;">4GB+</td>
                         <td class="content" style="font-size: large; font-style: bold;">2コア+</td>
                         <td class="content" style="font-size: large; font-style: bold;">.Net Framework 4.7.2<split class="warning"> *必須</split></td>
@@ -129,6 +129,82 @@
                         </td>
                     </tr>
                 </table>
+
+                <p class="detail-title"><i class="fa-solid fa-folder-open" style="margin-right: .5em;"></i>仕様</p>
+                <hr>
+                <div style="width: 95%; margin: auto auto;">
+                    <div style="width: 95%; margin: auto auto;">
+                        <p class="section-title"><i class="fa-solid fa-monitor-waveform"></i>表示内容</p>
+                        <hr>
+                        <p class="detail-text">表示画面に表示される内容(地図を除く)について</p>
+                        <div style="width: 98%; margin: auto;">
+                            <section><p class="section-title">タグ表示について</p>
+                                <p class="detail-text">色・文字列は次の配色を使用しています</p>
+                                <table class="tag-color-table" cellPadding="4">
+                                    <tr>
+                                        <th class="header">区分</th>
+                                        <th class="header">色</th>
+                                        <th class="header">文字列</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="tag-content">大津波警報</td>
+                                        <td class="tag-content" style="background-color: #9429FF; color: white; ">0x9429FF</td>
+                                        <td class="tag-content">大津波警報</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tag-content">津波警報</td>
+                                        <td class="tag-content" style="background-color: #FF0F0F; color: white; ">0xFF0F0F</td>
+                                        <td class="tag-content">津波警報</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tag-content">津波注意報</td>
+                                        <td class="tag-content" style="background-color: #D06800; color: white; ">0xD06800</td>
+                                        <td class="tag-content">津波注意報</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tag-content">津波予報</td>
+                                        <td class="tag-content" style="background-color: #008064; color: white; ">0x008064</td>
+                                        <td class="tag-content">津波予報</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tag-content">津波警報解除</td>
+                                        <td class="tag-content" style="background-color: #AD6161; color: white; ">0xAD6161</td>
+                                        <td class="tag-content">津波警報解除</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tag-content">津波注意報解除</td>
+                                        <td class="tag-content" style="background-color: #8A7600; color: white; ">0x8A7600</td>
+                                        <td class="tag-content">注意報解除</td>
+                                    </tr>
+                                </table>
+                                <p class="detail-text">この配色は地図の対象地域線のデフォルト1、デフォルト2でも使用しています。</p>
+                                <p class="detail-text">観測された津波については、タグ表示部分に電文の発表時刻を表示しています。</p>
+                            </section>
+                            <section><p class="section-title">高さ表示部分の囲みについて</p>
+                                <p class="detail-text">VTSE41については<split class="filename">10m</split>のキーワードを含むものを囲んでいます。</p>
+                                <p class="detail-text">VTSE5Xについては以下の表をご覧ください。</p>
+                                <table class="tag-color-table" cellPadding="4">
+                                    <tr>
+                                        <th class="header">表示内容</th>
+                                        <th class="header">状態</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="tag-content"><span style="padding-left: 10px; padding-right: 10px; border: 2px solid #9429FF; color: white;">高さ部分を0x9429FFで囲む</span></td>
+                                        <td class="tag-content" style="text-align: left;">想定されていた高さを超えている場合</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tag-content"><span style="padding-left: 10px; padding-right: 10px; border: 2px solid #FF007F; color: white;">時刻部分を0xFF007Fで囲む</span> & 上昇中アイコンを地点名の前に表示する</td>
+                                        <td class="tag-content" style="text-align: left;">津波観測値が上昇している場合</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tag-content"><span style="padding-left: 10px; padding-right: 10px; border: 2px solid #FF0F0F; color: white;">時刻部分を0xFF0F0Fで囲む</span></td>
+                                        <td class="tag-content" style="text-align: left;">津波を観測している(観測値処理中)場合</td>
+                                    </tr>
+                                </table>
+                            </section>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="modern-box" style="height: 9rem;">
                 <a href="download.html" class="btn btn-border">Download</a>
