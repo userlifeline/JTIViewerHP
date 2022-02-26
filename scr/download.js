@@ -31,7 +31,7 @@ if (latestInfo.OS == "Windows7+")
 {
   var winIconElement = document.createElement('i');
   winIconElement.className = "fab fa-windows";
-  winIconElement.style.cssText = "margin-right: .5em";
+  winIconElement.style.cssText = "color: #00AFF0; margin-right: .5em";
   latestOS.prepend(winIconElement);
 }
 latestOSVersion.textContent = latestInfo.OSVersion;
@@ -108,7 +108,7 @@ oldVersionList.forEach(i => {
       {
         var winIconElement = document.createElement('i');
         winIconElement.className = "fab fa-windows";
-        winIconElement.style.cssText = "margin-right: .5em";
+        winIconElement.style.cssText = "color: #00AFF0; margin-right: .5em";
         body_OS.prepend(winIconElement);
       }
     var body_OSVersion = document.createElement('td');
