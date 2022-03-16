@@ -1,5 +1,5 @@
 {
-    "LatestVersion":"0.0.0",
+    "LatestVersion":"0.0.0 alpha2",
     "OldVersion":["0.0.0 alpha0","0.0.0 alpha1"],
     "UpdateDateTime":"2021/03/12",
     "UpdateAdd":"棒読みちゃんの読み上げ地点名を辞書機能で代用する機能を追加|アップデーターを追加|津波情報の地図に表示する線のスタイルをカスタム可能にする機能を追加|VTSE5X、震源名の言語パック化に対応|GIFアニメーションの作成機能を追加",
